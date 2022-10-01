@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => {
     return (
         <div>
-            <section className='lg:inline-flex items-center justify-around lg:gap-x-72 border border-x-2 px-2'>
+            <section className='lg:inline-flex items-center justify-around lg:gap-x-72 h-16 border border-x-2 px-2'>
                 <div class="flex-1">
                     <a class="btn btn-ghost normal-case text-xl text-pink-500 font-bold">airbnb</a>
                 </div>
