@@ -106,7 +106,7 @@ const Icons = () => {
     ];
     return (
         <div className='py-2'>
-            <section className='flex justify-evenly items-center'>
+            <section className='lg:flex lg:flex-row md:flex-col sm:flex-col justify-evenly items-center'>
                 {
                     iDatas.map(idata => <>
                         <div className='inline-block'>
