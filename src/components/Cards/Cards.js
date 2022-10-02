@@ -3,12 +3,12 @@ import React from 'react';
 const Cards = () => {
 
     const cardData = [
-        { id: 1, img1: "https://placeimg.com/800/200/arch", img2: "https://placeimg.com/800/200/arch", img3: "https://placeimg.com/800/200/arch", img4: "https://placeimg.com/800/200/arch", title: "sindun-myeon,Icheon-si,Sout...", date: "5-11 Jan", rating: 4.81, distance: 4.726, money: 5.907 },
-        { id: 2, img1: "https://placeimg.com/800/200/arch", img2: "https://placeimg.com/800/200/arch", img3: "https://placeimg.com/800/200/arch", img4: "https://placeimg.com/800/200/arch", title: "sindun-myeon,Icheon-si,Sout...", date: "5-11 Jan", rating: 4.81, distance: 4.726, money: 5.907 },
-        { id: 3, img1: "https://placeimg.com/800/200/arch", img2: "https://placeimg.com/800/200/arch", img3: "https://placeimg.com/800/200/arch", img4: "https://placeimg.com/800/200/arch", title: "sindun-myeon,Icheon-si,Sout...", date: "5-11 Jan", rating: 4.81, distance: 4.726, money: 5.907 },
-        { id: 4, img1: "https://placeimg.com/800/200/arch", img2: "https://placeimg.com/800/200/arch", img3: "https://placeimg.com/800/200/arch", img4: "https://placeimg.com/800/200/arch", title: "sindun-myeon,Icheon-si,Sout...", date: "5-11 Jan", rating: 4.81, distance: 4.726, money: 5.907 },
-        { id: 4, img1: "https://placeimg.com/800/200/arch", img2: "https://placeimg.com/800/200/arch", img3: "https://placeimg.com/800/200/arch", img4: "https://placeimg.com/800/200/arch", title: "sindun-myeon,Icheon-si,Sout...", date: "5-11 Jan", rating: 4.81, distance: 4.726, money: 5.907 },
-        { id: 6, img1: "https://placeimg.com/800/200/arch", img2: "https://placeimg.com/800/200/arch", img3: "https://placeimg.com/800/200/arch", img4: "https://placeimg.com/800/200/arch", title: "sindun-myeon,Icheon-si,Sout...", date: "5-11 Jan", rating: 4.81, distance: 4.726, money: 5.907 },
+        { id: 1, img1: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSJJhKLjkBneIbnYdqAoDbmq5_Q6lJbGz0iLTO3KZrKPbEhzebtCKpPNWsjefQirHxba0&usqp=CAU", img2: "https://placeimg.com/800/200/arch", img3: "https://placeimg.com/800/200/arch", img4: "https://placeimg.com/800/200/arch", title: "sindun-myeon,Icheon-si,Sout...", date: "5-11 Jan", rating: 4.81, distance: 4.726, money: 5.907 },
+        { id: 2, img1: "https://placeimg.com/800/200/arch", img2: "https://placeimg.com/800/200/arch", img3: "https://placeimg.com/800/200/arch", img4: "https://placeimg.com/800/200/arch", title: "Pelkosenniemi finland", date: "5-11 Jan", rating: 4.81, distance: 4.726, money: 5.907 },
+        { id: 3, img1: "https://placeimg.com/800/200/arch", img2: "https://placeimg.com/800/200/arch", img3: "https://placeimg.com/800/200/arch", img4: "https://placeimg.com/800/200/arch", title: "Tambon nong kae, thailand", date: "5-11 Jan", rating: 4.81, distance: 4.726, money: 5.907 },
+        { id: 4, img1: "https://placeimg.com/800/200/arch", img2: "https://placeimg.com/800/200/arch", img3: "https://placeimg.com/800/200/arch", img4: "https://placeimg.com/800/200/arch", title: "El nido, philippines", date: "5-11 Jan", rating: 4.81, distance: 4.726, money: 5.907 },
+        { id: 4, img1: "https://placeimg.com/800/200/arch", img2: "https://placeimg.com/800/200/arch", img3: "https://placeimg.com/800/200/arch", img4: "https://placeimg.com/800/200/arch", title: "Thanh pho nha trang, vietnam", date: "5-11 Jan", rating: 4.81, distance: 4.726, money: 5.907 },
+        { id: 6, img1: "https://placeimg.com/800/200/arch", img2: "https://placeimg.com/800/200/arch", img3: "https://placeimg.com/800/200/arch", img4: "https://placeimg.com/800/200/arch", title: "Mueang chiang mai, district", date: "5-11 Jan", rating: 4.81, distance: 4.726, money: 5.907 },
     ];
 
     return (
@@ -16,9 +16,9 @@ const Cards = () => {
             {
                 cardData.map(card => <>
                     <section className='inline-block justify-start'>
-                        <div class="carousel w-52 rounded-lg">
+                        <div class="carousel h-44 w-52 rounded-lg">
                             <div id="item1" class="carousel-item">
-                                {/* <input type="checkbox" class="checkbox mask mask-heart border border-gray-700 checkbox-secondary" /> */}
+
                                 <img src={card.img1} class="" />
                             </div>
                             <div id="item2" class="carousel-item">
@@ -31,12 +31,19 @@ const Cards = () => {
                                 <img src={card.img4} class="" />
                             </div>
                         </div>
-                        {/* <div class="flex justify-center mb-2 text-4xl">
-                    <a href="#item1">.</a>
-                    <a href="#item2">.</a>
-                    <a href="#item3">.</a>
-                    <a href="#item4">.</a>
-                </div> */}
+
+                        {/* <div className='flex justify-evenly'>
+                            <div class="flex mb-2 text-4xl">
+                                <a href="#item1">.</a>
+                                <a href="#item2">.</a>
+                                <a href="#item3">.</a>
+                                <a href="#item4">.</a>
+                            </div>
+                            <div className='mt-5'>
+                                <input type="checkbox" class="checkbox mask mask-heart border border-gray-700 checkbox-secondary" />
+                            </div>
+                        </div> */}
+
                         <div className='text-xs text-start w-52 gap-y-2'>
                             <div className='inline-flex gap-10 mt-2'>
                                 <p className='font-semibold'>{card.title.length < 20 ? card.title : card.title.slice(0, 16) + "..."}</p>
