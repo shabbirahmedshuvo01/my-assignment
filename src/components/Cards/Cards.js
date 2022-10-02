@@ -12,7 +12,7 @@ const Cards = () => {
     ];
 
     return (
-        <div className='inline-flex gap-3'>
+        <div className='lg:inline-flex lg:flex-row md:flex-col sm:flex-col gap-3'>
             {
                 cardData.map(card => <>
                     <section className='inline-block justify-start'>
